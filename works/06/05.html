@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title><!-- [EDIT] 제목 --> 작품 06-05 제목 — <!-- [EDIT] 전시명 --> 전시명</title>
+  <meta name="description" content="<!-- [EDIT] 짧은 캡션 한 줄 요약 (검색/미리보기용) -->" />
+  <meta name="theme-color" content="#111111" />
+  <style>
+  :root{ --bg:#ffffff; --fg:#111111; --muted:#6b7280; --accent:#ff2d55; --maxw:720px; }
+  @media (prefers-color-scheme: dark){ :root{ --bg:#0b0b0b; --fg:#f2f2f2; --muted:#9ca3af; --accent:#ff5f7a; } }
+  *{ box-sizing:border-box; }
+  html,body{ height:100%; }
+  body{ margin:0; color:var(--fg); background:var(--bg);
+    font:400 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji; }
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:24px 20px calc(28px + env(safe-area-inset-bottom)); }
+  header{ margin-bottom:.5rem; }
+  .crumb{ color:var(--muted); font-size:.875rem; }
+  .crumb a{ color:inherit; text-decoration:underline; text-underline-offset:2px;
+    text-decoration-color:color-mix(in srgb, var(--fg) 40%, transparent); }
+  h1{ font-size:1.75rem; line-height:1.25; margin:.25rem 0 .35rem; }
+  .meta{ color:var(--muted); font-size:.95rem; margin:0 0 1rem; }
+  .caption p{ margin:.65rem 0 0; }
+  hr{ border:0; height:1px; background:color-mix(in srgb, var(--fg) 12%, transparent); margin:1.25rem 0; }
+  .figure-map{ position:relative; border:1px solid #d0d0d0;
+    border:1px solid color-mix(in srgb,var(--fg) 12%, transparent); border-radius:12px; overflow:hidden;
+    background:color-mix(in srgb,var(--fg) 5%, transparent); aspect-ratio: var(--map-ratio, 668/1413); }
+  .figure-map img{ display:block; width:100%; height:100%; object-fit:contain; }
+  .map-row{ display:flex; align-items:center; justify-content:space-between; gap:.75rem; margin-top:.5rem; }
+  .small{ color:var(--muted); font-size:.875rem; }
+  a{ color:inherit; text-decoration:underline; text-underline-offset:2px;
+     text-decoration-color:color-mix(in srgb, var(--fg) 40%, transparent); }
+  .btn{ display:inline-flex; align-items:center; gap:.625rem; padding:.625rem .9rem; min-height:44px; min-width:44px;
+    border:1px solid #d0d0d0; border:1px solid color-mix(in srgb,var(--fg) 18%, transparent); border-radius:999px;
+    background:transparent; color:inherit; font:inherit; cursor:pointer; -webkit-tap-highlight-color: rgba(0,0,0,.08); }
+  .btn:active{ transform:translateY(1px); }
+  footer{ margin-top:1.5rem; }
+
+  /* Pagers */
+  .pager{ display:flex; flex-wrap:wrap; gap:.4rem; align-items:center; justify-content:center; margin-top:1rem; }
+  .pager .num, .pager .extra{ display:inline-flex; align-items:center; justify-content:center; min-width:36px;
+    padding:.35rem .55rem; border:1px solid #d0d0d0; border:1px solid color-mix(in srgb,var(--fg) 18%, transparent);
+    border-radius:8px; text-decoration:none; }
+  .pager .num[aria-current="page"]{ background:color-mix(in srgb, var(--accent) 18%, transparent);
+    border-color:color-mix(in srgb, var(--accent) 40%, transparent); font-weight:600; }
+
+  .subpager{ display:flex; flex-wrap:wrap; gap:.35rem; align-items:center; justify-content:flex-start; margin:.25rem 0 1rem; }
+  .subpager .num{ display:inline-flex; align-items:center; justify-content:center; min-width:32px; padding:.3rem .5rem;
+    border:1px solid #d0d0d0; border:1px solid color-mix(in srgb,var(--fg) 18%, transparent); border-radius:6px; text-decoration:none; }
+  .subpager .num[aria-current="page"]{ background:color-mix(in srgb, var(--accent) 18%, transparent);
+    border-color:color-mix(in srgb, var(--accent) 40%, transparent); font-weight:600; }
+  nav.toplinks{ display:flex; gap:.75rem; flex-wrap:wrap; margin:.25rem 0 1rem; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="crumb"><a href="../../index.html">전시명</a> · 6번 · 세부 5/7</div>
+      <h1><!-- [EDIT] 작품 제목 --> 작품 06-05 Cosmic Dance</h1>
+      <p class="meta">안재홍, 2024.07 · Midjourney/Runway · CRT · Single-Channel Video · 28sec</p>
+    </header>
+
+    <!-- ✅ 세부 페이지 네비게이션을 최상단으로 이동 -->
+    <div class="subpager" aria-label="6번의 세부 작품 이동 (상단)">
+      <a class="num" href="./01.html">1</a>
+        <a class="num" href="./02.html">2</a>
+        <a class="num" href="./03.html">3</a>
+        <a class="num" href="./04.html">4</a>
+        <a class="num" href="./05.html" aria-current="page">5</a>
+        <a class="num" href="./06.html">6</a>
+        <a class="num" href="./07.html">7</a>
+    </div>
+
+    <main>
+      <nav class="toplinks">
+        <a class="btn" href="../06/04.html">← 이전</a>
+        <a class="btn" href="../../index.html">목록</a>
+        <a class="btn" href="../06/06.html">다음 →</a>
+        <span style="flex:1"></span>
+        <a class="btn" href="../../pages/artist.html">작가 소개</a>
+        <a class="btn" href="../../pages/making.html">메이킹 필름</a>
+      </nav>
+
+      <section class="caption" aria-label="작품 캡션">
+        <p>먼 우주 속 인공 구조물을 유영하듯 통과하며 시각적인 경이로움과 함께 감각적 차분함을 전달하는 작품입니다. 이 작품은 관객을 염두에 두기보다는, 창작자 스스로가 우주적 공간에서 느끼는 시각적 경이와 마음을 가라앉히는 차분함을 경험하기 위해 만든 감각적인 여정입니다. 원통형 구조물 내부를 천천히 떠다니는 카메라 워크와 디스플레이로 이루어진 공간은 마치 우주를 유영하는 듯한 고요함을 선사하며, 시청자에게는 시각적 명상과 같은 잔잔한 감각을 제공합니다.</p>
+        <p>This work presents a serene sensory experience, capturing the calmness and visual wonder of drifting through artificial structures in deep space. Rather than being created specifically with an audience in mind, it originated from the artist’s own desire to explore the tranquility and visual awe inspired by cosmic environments. Through deliberate, slow-moving camera work gently gliding through cylindrical structures and spaces illuminated by digital displays, the piece evokes the profound stillness of floating in outer space. The result is a tranquil, visually meditative experience, offering viewers a peaceful journey of contemplative beauty.</p>
+      </section>
+
+      <hr />
+
+      <figure class="figure-map" aria-label="전시장 지도">
+        <img src="../../assets/maps/floor-1.png" alt="전시장 지도" decoding="async" fetchpriority="high" />
+      </figure>
+      <div class="map-row">
+        <div class="small">지도: Floor 1</div>
+        <div>
+          <a class="btn" href="../../assets/maps/floor-1.png" target="_blank" rel="noopener">지도를 크게 보기</a>
+          <button class="btn" id="shareBtn" type="button" aria-label="이 페이지 공유">공유</button>
+        </div>
+      </div>
+
+      <!-- 🔽 전체 번호(1~11)는 페이지 하단에만 표시 -->
+      <div class="pager" aria-label="그룹 이동 (하단)">
+        <a class="num" href="../01/01.html">1</a>
+        <a class="num" href="../02/01.html">2</a>
+        <a class="num" href="../03/01.html">3</a>
+        <a class="num" href="../04/01.html">4</a>
+        <a class="num" href="../05/01.html">5</a>
+        <a class="num" href="../06/01.html" aria-current="page">6</a>
+        <a class="num" href="../07/01.html">7</a>
+        <a class="num" href="../08/01.html">8</a>
+        <a class="num" href="../09/01.html">9</a>
+        <a class="num" href="../10/01.html">10</a>
+        <a class="num" href="../11/01.html">11</a>
+        <a class="extra" href="../../pages/artist.html">작가</a>
+        <a class="extra" href="../../pages/making.html">필름</a>
+      </div>
+    </main>
+
+    <footer class="small">© 2025 WE WERE HERE · 마지막 업데이트: 2025-10-22</footer>
+  </div>
+
+  <script>
+    (function(){
+      const btn = document.getElementById('shareBtn');
+      if(!btn) return;
+      btn.addEventListener('click', async () => {
+        const data = { title: document.title, text: document.querySelector('h1')?.textContent || '작품', url: location.href };
+        if (navigator.share) { try { await navigator.share(data); } catch(e) {} }
+        else { try { await navigator.clipboard.writeText(location.href); btn.textContent='링크 복사됨'; setTimeout(()=>btn.textContent='공유',1500);}
+               catch(e) { alert('링크: '+location.href); } }
+      });
+    })();
+  </script>
+</body>
+</html>
