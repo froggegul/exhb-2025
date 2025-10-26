@@ -182,5 +182,34 @@ Through this exhibition, Jaehong encourages visitors to reflect upon their own m
           <div class="small" style="margin-top:.35rem; display:flex; flex-wrap:wrap; gap:.5rem;"><a class="small" href="./works/11/01.html">11-01</a> <a class="small" href="./works/11/02.html">11-02</a> <a class="small" href="./works/11/03.html">11-03</a> <a class="small" href="./works/11/04.html">11-04</a></div>
         </li></ul>
   </div>
+  <script>
+(function(){
+  const sec = document.getElementById('preface');
+  if(!sec) return;
+  const ko = sec.querySelector('#preface-ko');
+  const en = sec.querySelector('#preface-en');
+  const btns = sec.querySelectorAll('[data-lang]');
+
+  function setLang(lang, updateUrl){
+    const isKo = (lang === 'ko');
+    ko.hidden = !isKo;
+    en.hidden = isKo;
+    btns.forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang ? 'true' : 'false'));
+    try { localStorage.setItem('preface-lang', lang); } catch(e){}
+    if (updateUrl) {
+      const u = new URL(location.href);
+      u.searchParams.set('lang', lang);
+      history.replaceState(null, '', u);
+    }
+  }
+
+  // 초기 언어: URL ?lang= 우선, 없으면 localStorage, 둘 다 없으면 ko
+  const sp = new URL(location.href).searchParams;
+  const init = (sp.get('lang') || localStorage.getItem('preface-lang') || 'ko').toLowerCase();
+  setLang(init === 'en' ? 'en' : 'ko', false);
+
+  btns.forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang, true)));
+})();
+</script>
 </body>
 </html>
