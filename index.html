@@ -58,6 +58,29 @@
       <a class="btn" href="./pages/artist.html">작가 소개</a>
       <a class="btn" href="./pages/making.html">메이킹 필름</a>
     </nav>
+    <!-- [ADD] 전시 서문 (KO/EN 전환) -->
+<section id="preface" aria-label="전시 서문" style="margin:16px 0 20px;">
+  <!-- 토글 버튼 -->
+  <div class="lang-toggle" style="display:flex;gap:.5rem;align-items:center;margin-bottom:.5rem;">
+    <strong style="font-size:1rem;">전시 서문</strong>
+    <span style="flex:1;"></span>
+    <button type="button" class="btn" data-lang="ko" aria-pressed="true" title="한국어 서문 보기">KO</button>
+    <button type="button" class="btn" data-lang="en" aria-pressed="false" title="영문 서문 보기">EN</button>
+  </div>
+
+  <!-- 한국어 서문 (기본 노출) -->
+  <div id="preface-ko">
+    <p><!-- [EDIT-KO] 한국어 서문 1문단 --></p>
+    <!-- <p>필요하면 더 추가</p> -->
+  </div>
+
+  <!-- 영문 서문 (처음엔 숨김) -->
+  <div id="preface-en" hidden>
+    <p><!-- [EDIT-EN] English preface paragraph 1 --></p>
+    <!-- <p>Add more if needed.</p> -->
+  </div>
+</section>
+<!-- [ADD] /전시 서문 -->
     <p class="small">각 항목은 세부 작품(서브) 페이지로 이어집니다.</p>
     <ul style="list-style:none; padding:0; margin:0;">
         <li style="padding:.9rem 0; border-bottom:1px solid color-mix(in srgb,var(--fg) 12%, transparent);">
