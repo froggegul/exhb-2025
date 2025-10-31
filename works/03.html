@@ -5,33 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>WE WERE HERE — 작품 03 (세부 1개)</title>
   <meta name="theme-color" content="#111111" />
-  <style>
-    html { scroll-behavior: smooth; }
-    :root { --bg:#ffffff; --fg:#111111; --muted:#6b7280; --accent:#ff2d55; --maxw:720px; }
-    @media (prefers-color-scheme: dark) { :root { --bg:#0b0b0b; --fg:#f2f2f2; --muted:#9ca3af; --accent:#ff5f7a; } }
-    * { box-sizing:border-box; }
-    html,body { height:100%; }
-    body { margin:0; color:var(--fg); background:var(--bg);
+  <style>    html{ scroll-behavior:smooth; }
+    :root{ --bg:#ffffff; --fg:#111111; --muted:#6b7280; --accent:#ff2d55; --maxw:720px; }
+    @media (prefers-color-scheme: dark){ :root{ --bg:#0b0b0b; --fg:#f2f2f2; --muted:#9ca3af; --accent:#ff5f7a; } }
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{ margin:0; color:var(--fg); background:var(--bg);
       font:400 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji; }
-    .wrap { max-width:var(--maxw); margin:0 auto; padding:24px 20px calc(28px + env(safe-area-inset-bottom)); }
-    header { margin-bottom:.5rem; }
-    .crumb { color:var(--muted); font-size:.875rem; }
-    .crumb a { color:inherit; text-decoration:underline; text-underline-offset:2px;
+    .wrap{ max-width:var(--maxw); margin:0 auto; padding:24px 20px calc(28px + env(safe-area-inset-bottom)); }
+    header{ margin-bottom:.5rem; }
+    .crumb{ color:var(--muted); font-size:.875rem; }
+    .crumb a{ color:inherit; text-decoration:underline; text-underline-offset:2px;
       text-decoration-color:color-mix(in srgb, var(--fg) 40%, transparent); }
-    h1 { font-size:1.75rem; line-height:1.25; margin:.25rem 0 .35rem; }
-    .meta { color:var(--muted); font-size:.95rem; margin:0 0 1rem; }
-    .caption p { margin:.65rem 0 0; }
-    .small { color:var(--muted); font-size:.875rem; }
-    .btn { display:inline-flex; align-items:center; gap:.625rem; padding:.625rem .9rem; min-height:44px; min-width:44px;
-      border:1px solid #d0d0d0; border:1px solid color-mix(in srgb, var(--fg) 18%, transparent); border-radius:999px;
+    h1{ font-size:1.75rem; line-height:1.25; margin:.25rem 0 .35rem; }
+    .meta{ color:var(--muted); font-size:.95rem; margin:0 0 1rem; }
+    .caption p{ margin:.65rem 0 0; }
+    .small{ color:var(--muted); font-size:.875rem; }
+    .btn{ display:inline-flex; align-items:center; gap:.625rem; padding:.625rem .9rem; min-height:44px; min-width:44px;
+      border:1px solid #d0d0d0; border:1px solid color-mix(in srgb,var(--fg) 18%, transparent); border-radius:999px;
       background:transparent; color:inherit; font:inherit; cursor:pointer; -webkit-tap-highlight-color: rgba(0,0,0,.08); }
-    .btn:active { transform:translateY(1px); }
-    .pager .num, .subpager .num { font: inherit; font-size:1rem; line-height:1; padding:.35rem .6rem; }
-    /* Ensure images fit the text width */
-    .figure-thumb img { display:block; width:100%; height:auto; }
-    .figure-map img { display:block; width:100%; height:auto; object-fit:contain; }
-    .figure-thumb, .figure-map { border:1px solid color-mix(in srgb, var(--fg) 12%, transparent); border-radius:12px; overflow:hidden; }
-  </style>
+    .btn:active{ transform:translateY(1px); }
+    a{ color:inherit; text-decoration:underline; text-underline-offset:2px;
+       text-decoration-color:color-mix(in srgb, var(--fg) 40%, transparent); }
+    .pager .num, .subpager .num{ font:inherit; font-size:1rem; line-height:1; padding:.35rem .6rem;
+      color:inherit; text-decoration:none; }
+    .pager .num[aria-current="page"], .subpager .num[aria-current="page"]{
+      background:color-mix(in srgb, var(--accent) 18%, transparent);
+      border:1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+      border-radius:8px;
+    }
+    .figure-thumb img{ display:block; width:100%; height:auto; }
+    .figure-map img{ display:block; width:100%; height:auto; object-fit:contain; }
+    </style>
 </head>
 <body>
   <div class="wrap">
@@ -77,16 +82,15 @@
 <p>이 연작은 2024년 8월부터 2025년 7월까지 배우 신해윤과 함께 진행한 프로젝트로, AI와 인간 배우의 협업 가능성을 탐구한 시리즈입니다. 헨젤과 그레텔의 마녀 할머니 역할을 통해 정체성과 기술의 경계를 넘나드는 실험을 담았죠. 신해윤 배우는 이 과정에서 나이나 외형적 제약을 넘어 더 다양한 연기에 도전할 수 있는 가능성을 경험했고, 프로젝트가 진행되는 동안 모션 캡쳐 기술이 빠르게 발전하는 모습을 지켜보며 여러 감정을 느꼈습니다. 이를 통해 기술의 진보가 단순한 위협이 아니라, 배우들이 새로운 무대를 만들어갈 수 있는 기회로 작용할 수 있음을 보여주는 의미 있는 연작입니다.</p>
 <p>This series, conducted from August 2024 to July 2025 in collaboration with actor Shin Haeyun, explores the creative possibilities of collaboration between AI and human performers. Through the role of the witch grandmother in Hansel and Gretel, the project experiments with crossing the boundaries of identity and technology. During this process, Shin experienced the potential to transcend age and physical limitations, expanding her range of performances. Observing the rapid evolution of technology throughout the project, she went through complex emotions — from curiosity to awe. Ultimately, this body of work demonstrates that technological progress is not merely a threat to human creativity but can serve as a meaningful opportunity for actors to pioneer new forms of expression and stages of performance.</p>
 </section>
-  <figure aria-label="전시장 지도" class="figure-map">
-<img alt="전시장 지도" decoding="async" fetchpriority="high" src="../assets/maps/floor-3.png"/>
-</figure>
   <hr style="border:0;height:1px;background:#e5e7eb;margin:1rem 0 .75rem;" />
 </section>
-
+      <hr style="border:0;height:1px;background:#e5e7eb;margin:1rem 0 .75rem;" /><figure aria-label="전시장 지도" class="figure-map">
+<img alt="전시장 지도" decoding="async" fetchpriority="high" src="../assets/maps/floor-3.png"/>
+</figure>
       
 <div class="pager" aria-label="그룹 이동 (하단)"
      style="display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;justify-content:center;margin-top:1rem;">
-  <a class="num" href="./01.html">1</a> <a class="num" href="./02.html">2</a> <a class="num" href="./03.html" aria-current="page">3</a> <a class="num" href="./04.html">4</a> <a class="num" href="./05.html">5</a> <a class="num" href="./06.html">6</a> <a class="num" href="./07.html">7</a> <a class="num" href="./08.html">8</a> <a class="num" href="./09.html">9</a> <a class="num" href="./10.html">10</a> <a class="num" href="./11.html">11</a> <a class="extra" href="../pages/artist.html">작가</a> <a class="extra" href="../pages/making.html">필름</a>
+  <a class="num" href="./01.html">1</a> <a class="num" href="./02.html">2</a> <a class="num" href="./03.html" aria-current="page">3</a> <a class="num" href="./04.html">4</a> <a class="num" href="./05.html">5</a> <a class="num" href="./06.html">6</a> <a class="num" href="./07.html">7</a> <a class="num" href="./08.html">8</a> <a class="num" href="./09.html">9</a> <a class="num" href="./10.html">10</a> <a class="num" href="./11.html">11</a> <a class="extra" href="../pages/artist.html">작가</a> <a class="extra" href="../pages/making.html">메이킹 필름</a>
 </div>
     </main>
 
