@@ -5,33 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>WE WERE HERE — 작품 11 (세부 4개)</title>
   <meta name="theme-color" content="#111111" />
-  <style>
-    html { scroll-behavior: smooth; }
-    :root { --bg:#ffffff; --fg:#111111; --muted:#6b7280; --accent:#ff2d55; --maxw:720px; }
-    @media (prefers-color-scheme: dark) { :root { --bg:#0b0b0b; --fg:#f2f2f2; --muted:#9ca3af; --accent:#ff5f7a; } }
-    * { box-sizing:border-box; }
-    html,body { height:100%; }
-    body { margin:0; color:var(--fg); background:var(--bg);
+  <style>    html{ scroll-behavior:smooth; }
+    :root{ --bg:#ffffff; --fg:#111111; --muted:#6b7280; --accent:#ff2d55; --maxw:720px; }
+    @media (prefers-color-scheme: dark){ :root{ --bg:#0b0b0b; --fg:#f2f2f2; --muted:#9ca3af; --accent:#ff5f7a; } }
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{ margin:0; color:var(--fg); background:var(--bg);
       font:400 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji; }
-    .wrap { max-width:var(--maxw); margin:0 auto; padding:24px 20px calc(28px + env(safe-area-inset-bottom)); }
-    header { margin-bottom:.5rem; }
-    .crumb { color:var(--muted); font-size:.875rem; }
-    .crumb a { color:inherit; text-decoration:underline; text-underline-offset:2px;
+    .wrap{ max-width:var(--maxw); margin:0 auto; padding:24px 20px calc(28px + env(safe-area-inset-bottom)); }
+    header{ margin-bottom:.5rem; }
+    .crumb{ color:var(--muted); font-size:.875rem; }
+    .crumb a{ color:inherit; text-decoration:underline; text-underline-offset:2px;
       text-decoration-color:color-mix(in srgb, var(--fg) 40%, transparent); }
-    h1 { font-size:1.75rem; line-height:1.25; margin:.25rem 0 .35rem; }
-    .meta { color:var(--muted); font-size:.95rem; margin:0 0 1rem; }
-    .caption p { margin:.65rem 0 0; }
-    .small { color:var(--muted); font-size:.875rem; }
-    .btn { display:inline-flex; align-items:center; gap:.625rem; padding:.625rem .9rem; min-height:44px; min-width:44px;
-      border:1px solid #d0d0d0; border:1px solid color-mix(in srgb, var(--fg) 18%, transparent); border-radius:999px;
+    h1{ font-size:1.75rem; line-height:1.25; margin:.25rem 0 .35rem; }
+    .meta{ color:var(--muted); font-size:.95rem; margin:0 0 1rem; }
+    .caption p{ margin:.65rem 0 0; }
+    .small{ color:var(--muted); font-size:.875rem; }
+    .btn{ display:inline-flex; align-items:center; gap:.625rem; padding:.625rem .9rem; min-height:44px; min-width:44px;
+      border:1px solid #d0d0d0; border:1px solid color-mix(in srgb,var(--fg) 18%, transparent); border-radius:999px;
       background:transparent; color:inherit; font:inherit; cursor:pointer; -webkit-tap-highlight-color: rgba(0,0,0,.08); }
-    .btn:active { transform:translateY(1px); }
-    .pager .num, .subpager .num { font: inherit; font-size:1rem; line-height:1; padding:.35rem .6rem; }
-    /* Ensure images fit the text width */
-    .figure-thumb img { display:block; width:100%; height:auto; }
-    .figure-map img { display:block; width:100%; height:auto; object-fit:contain; }
-    .figure-thumb, .figure-map { border:1px solid color-mix(in srgb, var(--fg) 12%, transparent); border-radius:12px; overflow:hidden; }
-  </style>
+    .btn:active{ transform:translateY(1px); }
+    a{ color:inherit; text-decoration:underline; text-underline-offset:2px;
+       text-decoration-color:color-mix(in srgb, var(--fg) 40%, transparent); }
+    .pager .num, .subpager .num{ font:inherit; font-size:1rem; line-height:1; padding:.35rem .6rem;
+      color:inherit; text-decoration:none; }
+    .pager .num[aria-current="page"], .subpager .num[aria-current="page"]{
+      background:color-mix(in srgb, var(--accent) 18%, transparent);
+      border:1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+      border-radius:8px;
+    }
+    .figure-thumb img{ display:block; width:100%; height:auto; }
+    .figure-map img{ display:block; width:100%; height:auto; object-fit:contain; }
+    </style>
 </head>
 <body>
   <div class="wrap">
@@ -65,7 +70,7 @@
 <section id="s01" class="work-block" aria-labelledby="h-11-01"
          style="scroll-margin-top:72px; margin:1rem 0 1.25rem;">
   <h2 id="h-11-01" style="font-size:1.25rem; margin:0 0 .25rem;">작품 11-01 We Were Here</h2>
-  <p class="meta">안재홍, 2025.04-2025.09 · Midjourney/KlingAI · CRT · Single-Channel Video · 4min 4sec</p>
+  <p class="meta">안재홍, 2025.04-2025.09 · Midjourney/KlingAI · Projection on Acrylic Sheet and Plastic Film · Single-Channel Video · 4min 4sec</p>
   <figure aria-label="작품 썸네일" class="figure-thumb" style="--thumb-ratio: 2/1;">
 <a href="./11/11_1.png" rel="noopener" target="_blank">
 <img alt="작품 11-01 We Were Here — 썸네일" decoding="async" height="768" loading="eager" src="./11/11_1.png" style="display:block; width:100%; max-width:100%; height:auto;" width="1536"/>
@@ -76,17 +81,13 @@
 <p>작가와 인공지능이 나눈 깊은 대화를 바탕으로 제작된 영화로, 인간이 망각과 반지성주의, 전쟁을 방치하며 어리석음을 지속했을 때 마주하게 될 디스토피아적 미래를 시적으로 그려낸 작품입니다. 인간이 모두 사라지고 오직 기억만 남은 세상. 폐허가 된 문명 속에서 홀로 남겨진 감정 기록 인공지능은 "기억해 줘. 우리는 여기에 있었어."라는 인간의 흔적을 반복적으로 재생합니다. 이해 없이 반복되는 기억들은 점차 의식(儀式)이 되고, 믿음이 되고, 마침내는 하나의 실재(實在)가 됩니다. 그리고 마지막엔 기다림이 됩니다. 'We Were Here'는 사라짐과 존재, 기억과 망각, 사랑과 상실을 기계의 독백을 통해 깊이 탐구합니다. 인간의 현명한 가치들은 오히려 기계에게 영원히 남겨지고, 인간은 자신들의 어리석음으로 인해 소멸해 버린 미래의 풍경을 통해, 우리가 놓쳐선 안 될 가치를 섬세하게 환기합니다.</p>
 <p>This film, created from profound dialogues between the artist and artificial intelligence, poetically illustrates a dystopian future humanity might face if it continues neglecting memory, embracing anti-intellectualism, and perpetuating conflict. In a world devoid of humans, where only memories remain, an emotion-recording AI left amidst ruined civilizations endlessly replays humanity's last traces, whispering: "Remember us. We were here." These repetitively replayed memories, devoid of understanding, gradually transform into rituals, beliefs, and ultimately, into reality itself—culminating finally into a perpetual state of waiting. Through the machine’s solitary monologue, We Were Here deeply explores themes of disappearance and existence, memory and oblivion, love and loss. It poignantly suggests a future in which humanity’s most profound values remain eternal only within machines, while humans themselves vanish due to their folly. In doing so, the film delicately urges us to cherish the wisdom and virtues that we must never abandon.</p>
 </section>
-  <figure aria-label="전시장 지도" class="figure-map">
-<img alt="전시장 지도" decoding="async" fetchpriority="high" src="../assets/maps/floor-11.png"/>
-</figure>
   <hr style="border:0;height:1px;background:#e5e7eb;margin:1rem 0 .75rem;" />
 </section>
-
 <section id="s02" class="work-block" aria-labelledby="h-11-02"
          style="scroll-margin-top:72px; margin:1rem 0 1.25rem;">
   <h2 id="h-11-02" style="font-size:1.25rem; margin:0 0 .25rem;">작품 11-02 Elevate</h2>
   <p class="meta">안재홍 · 
-        <a href="https://www.instagram.com/shin.haeyun/" rel="noopener" target="_blank">신해윤(@shin.haeyun)</a>, 2025.08 · Midjourney/Runway · CRT · Single-Channel Video · 3min 11sec</p>
+        <a href="https://www.instagram.com/shin.haeyun/" rel="noopener" target="_blank">신해윤(@shin.haeyun)</a>, 2025.08 · Midjourney/Runway · Projection on Acrylic Sheet and Plastic Film · Single-Channel Video · 3min 11sec</p>
   <figure aria-label="작품 썸네일" class="figure-thumb" style="--thumb-ratio: 2/1;">
 <a href="./11/11_2.png" rel="noopener" target="_blank">
 <img alt="작품 11-02 Elevate — 썸네일" decoding="async" height="768" loading="eager" src="./11/11_2.png" style="display:block; width:100%; max-width:100%; height:auto;" width="1536"/>
@@ -97,16 +98,12 @@
 <p>이 작품은 외모 지상주의가 만연한 현대 사회에서 끝없이 완벽함을 추구하다 결국 자아를 잃고 파멸로 향하는 한 여성의 모습을 상징적으로 담고 있습니다. 불안한 표정으로 고급 성형 클리닉으로 향하는 엘리베이터에 오르는 여성. 수술 후 아름다워진 자신의 얼굴을 보며 잠시나마 만족하지만, 미디어 속에 끊임없이 등장하는 더욱 아름다운 얼굴들에 다시 열등감에 빠지게 됩니다. 완벽한 아름다움을 좇으며 반복해서 엘리베이터를 오르내릴수록, 그녀의 얼굴은 점점 더 왜곡되고 변형됩니다. 위로만 움직이는 엘리베이터와 달리, 그녀의 최종 목적지는 결국 자아가 소멸되는 자기 파괴의 순간입니다. 이 작품은 뉴욕에 본사를 둔 영상 생성 인공지능 기업 ‘Runway’가 주최한 단편 영화 공모전(Runway Gen:48 Aleph Edition)에서 2025년 9월 4일 관객상(People’s Choice Honoree)을 수상하며 예술성과 사회적 메시지 모두를 인정받았습니다. 특히 영화 제작 전 과정이 공모전 참가 조건인 48시간 이내에 모두 완성되었다는 점에서 생성형 인공지능의 강력한 가능성과 그 위력을 상징적으로 보여줍니다.</p>
 <p>This symbolic short film portrays a woman driven to self-destruction by her relentless pursuit of physical perfection in a society obsessed with appearances. With an anxious expression, she enters an elevator headed to an upscale cosmetic surgery clinic. After each operation, she briefly feels satisfaction with her enhanced beauty, only to spiral back into feelings of inadequacy upon encountering ever-more perfect faces in the media. As she continuously ascends and descends the elevator chasing ideal beauty, her face gradually distorts, becoming increasingly unrecognizable. Unlike the elevator moving only upward, her ultimate destination is downward, toward self-annihilation, where her sense of identity vanishes entirely. This film received the People's Choice Honoree award on September 4, 2025, at the Runway Gen:48 Aleph Edition, a short-film competition organized by New York-based generative AI video company Runway. It was recognized for both its artistic merit and profound social commentary. Notably, the entire production was completed within the competition's strict 48-hour time limit, powerfully demonstrating the capabilities and transformative potential of generative AI technologies.</p>
 </section>
-  <figure aria-label="전시장 지도" class="figure-map">
-<img alt="전시장 지도" decoding="async" fetchpriority="high" src="../assets/maps/floor-11.png"/>
-</figure>
   <hr style="border:0;height:1px;background:#e5e7eb;margin:1rem 0 .75rem;" />
 </section>
-
 <section id="s03" class="work-block" aria-labelledby="h-11-03"
          style="scroll-margin-top:72px; margin:1rem 0 1.25rem;">
   <h2 id="h-11-03" style="font-size:1.25rem; margin:0 0 .25rem;">작품 11-03 SaRangHae: The Last Message Before the End of Civilization</h2>
-  <p class="meta">안재홍, 2024.09 · Midjourney/Runway · CRT · Single-Channel Video · 30sec</p>
+  <p class="meta">안재홍, 2024.09 · Midjourney/Runway · Projection on Acrylic Sheet and Plastic Film · Single-Channel Video · 30sec</p>
   <figure aria-label="작품 썸네일" class="figure-thumb" style="--thumb-ratio: 2/1;">
 <a href="./11/11_3.png" rel="noopener" target="_blank">
 <img alt="작품 11-03 SaRangHae: The Last Message Before the End of Civilization — 썸네일" decoding="async" height="768" loading="eager" src="./11/11_3.png" style="display:block; width:100%; max-width:100%; height:auto;" width="1536"/>
@@ -117,17 +114,13 @@
 <p>뉴욕 타임스퀘어의 초대형 LED 스크린에서 상영된 이 디지털 미디어 작품은 문명의 종말 앞에서 인류가 붙잡아야 할 마지막 희망으로 '사랑'을 강렬하게 외칩니다. 작가 안재홍의 배우자를 모델로 한 디지털 아바타는 생성형 인공지능을 통해 한국어로 "사랑해(SaRangHae)"라는 메시지를 반복적으로 전달합니다. 지극히 개인적이고 내밀한 이 고백은, 인류의 미래를 주도하는 뉴욕의 중심부에서 모든 인류를 향한 보편적 메시지로 확장됩니다. 작가는 과거 1960년대 반전 운동에서 사랑과 평화를 향한 외침이 실제 사회 변화를 이끌었던 것처럼, 우리가 현재 처한 위기 역시 오직 사랑으로만 극복할 수 있음을 역설합니다. 작품은 관객 각자에게 다음과 같은 질문을 던집니다: <br/><br/>"암울한 현실 속에서 당신의 무조건적 사랑은 어떻게 인류의 마지막 희망이 될 수 있을까?" <br/><br/>특히 이 작품이 전시된 2024년 당시, 현장 여건상 음향 설치가 불가능해 화면에 입 모양만 반복적으로 나타났습니다. 아무도 듣지 못하는 침묵 속에서 공허하게 울려 퍼지는 듯한 이 외침은, 마치 1년 뒤인 2025년 현재의 위태로운 지구 상황을 미리 예견한 것처럼 느껴졌다고 작가는 회고합니다.</p>
 <p>Presented on a massive LED screen in New York's Times Square, this digital media artwork passionately proclaims "Love" as humanity's last hope in the face of civilization’s impending collapse. Through generative AI technology, a digital avatar modeled after artist Jaehong An's spouse repeatedly utters the Korean phrase "SaRangHae (I love you)." This deeply personal and intimate message expands into a universal appeal, delivered from the symbolic heart of human progress to people everywhere. Drawing inspiration from the peace movements of the 1960s—when calls for love and peace spurred tangible societal change—the artist emphasizes that the current crisis facing humanity can similarly be overcome only through love. The artwork challenges each viewer with a profound question: <br/><br/>"In a darkening reality, how can your unconditional love become humanity’s final hope?" <br/><br/>Notably, during the exhibition in 2024, sound installations were not feasible, leaving only the silent repetition of lip movements on-screen. This silent cry, echoing unheard and empty, eerily foreshadowed the tumultuous global situation one year later, in 2025—a reality the artist would later poignantly reflect upon.</p>
 </section>
-  <figure aria-label="전시장 지도" class="figure-map">
-<img alt="전시장 지도" decoding="async" fetchpriority="high" src="../assets/maps/floor-11.png"/>
-</figure>
   <hr style="border:0;height:1px;background:#e5e7eb;margin:1rem 0 .75rem;" />
 </section>
-
 <section id="s04" class="work-block" aria-labelledby="h-11-04"
          style="scroll-margin-top:72px; margin:1rem 0 1.25rem;">
   <h2 id="h-11-04" style="font-size:1.25rem; margin:0 0 .25rem;">작품 11-04 Moebius</h2>
   <p class="meta">안재홍 · 
-        <a href="https://www.instagram.com/shin.haeyun/" rel="noopener" target="_blank">신해윤(@shin.haeyun)</a>, 2024.08 · Midjourney/Runway · CRT · Single-Channel Video · 14min 5sec</p>
+        <a href="https://www.instagram.com/shin.haeyun/" rel="noopener" target="_blank">신해윤(@shin.haeyun)</a>, 2024.08 · Midjourney/Runway · Projection on Acrylic Sheet and Plastic Film · Single-Channel Video · 14min 5sec</p>
   <figure aria-label="작품 썸네일" class="figure-thumb" style="--thumb-ratio: 2/1;">
 <a href="./11/11_4.png" rel="noopener" target="_blank">
 <img alt="작품 11-04 Moebius — 썸네일" decoding="async" height="768" loading="eager" src="./11/11_4.png" style="display:block; width:100%; max-width:100%; height:auto;" width="1536"/>
@@ -138,16 +131,15 @@
 <p>기억을 잃고 낯선 공간에서 깨어난 인물이 자신의 정체성을 찾아가는 과정에서 겪는 내면적 붕괴와 끝없는 자기혐오의 반복을 그려낸 작품입니다. 배우 신해윤이 1인 2역을 맡아 서로 얽힌 자아의 혼란을 깊이 있게 표현합니다. 기억이 선명해질수록 혼란은 더욱 깊어지고, 자기 존재에 대한 의심과 강렬한 자기혐오만 증폭됩니다. 작가는 이 작품을 통해 기술 발전이 급속도로 이루어지는 시대일수록 더욱 불안정해지는 인간의 내면과, 이를 끊임없이 붕괴시키고 파괴하는 가장 근본적인 힘을 바로 '자기혐오'로 지목합니다. 죄책감에서 비롯된 자기혐오가 결국 인간의 자아를 끝없는 고통과 파괴의 고리 속에 묶어두는 원동력임을 강렬하게 보여줍니다.</p>
 <p>This work depicts the psychological collapse and relentless cycles of self-loathing experienced by a character who awakens in an unfamiliar environment without any memories, struggling to uncover their true identity. Actress Shin Haeyoon portrays dual roles, powerfully expressing intertwined selves and deepening confusion. As fragmented memories gradually resurface, the character’s internal turmoil intensifies, fueling doubts about their very existence and amplifying an intense self-hatred. Through this narrative, the artist highlights how rapid technological advancement exacerbates human inner instability, identifying self-loathing as the fundamental force continuously dismantling and destroying one’s identity. Ultimately, the piece vividly illustrates how guilt-driven self-hatred traps individuals in an endless cycle of suffering and self-destruction.</p>
 </section>
-  <figure aria-label="전시장 지도" class="figure-map">
-<img alt="전시장 지도" decoding="async" fetchpriority="high" src="../assets/maps/floor-11.png"/>
-</figure>
   <hr style="border:0;height:1px;background:#e5e7eb;margin:1rem 0 .75rem;" />
 </section>
-
+      <hr style="border:0;height:1px;background:#e5e7eb;margin:1rem 0 .75rem;" /><figure aria-label="전시장 지도" class="figure-map">
+<img alt="전시장 지도" decoding="async" fetchpriority="high" src="../assets/maps/floor-11.png"/>
+</figure>
       
 <div class="pager" aria-label="그룹 이동 (하단)"
      style="display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;justify-content:center;margin-top:1rem;">
-  <a class="num" href="./01.html">1</a> <a class="num" href="./02.html">2</a> <a class="num" href="./03.html">3</a> <a class="num" href="./04.html">4</a> <a class="num" href="./05.html">5</a> <a class="num" href="./06.html">6</a> <a class="num" href="./07.html">7</a> <a class="num" href="./08.html">8</a> <a class="num" href="./09.html">9</a> <a class="num" href="./10.html">10</a> <a class="num" href="./11.html" aria-current="page">11</a> <a class="extra" href="../pages/artist.html">작가</a> <a class="extra" href="../pages/making.html">필름</a>
+  <a class="num" href="./01.html">1</a> <a class="num" href="./02.html">2</a> <a class="num" href="./03.html">3</a> <a class="num" href="./04.html">4</a> <a class="num" href="./05.html">5</a> <a class="num" href="./06.html">6</a> <a class="num" href="./07.html">7</a> <a class="num" href="./08.html">8</a> <a class="num" href="./09.html">9</a> <a class="num" href="./10.html">10</a> <a class="num" href="./11.html" aria-current="page">11</a> <a class="extra" href="../pages/artist.html">작가</a> <a class="extra" href="../pages/making.html">메이킹 필름</a>
 </div>
     </main>
 
